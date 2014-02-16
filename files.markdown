@@ -1,23 +1,36 @@
-f = open("index.markdown")
-read(f, Int)
-read(f, Int)
-readline(f)
-isopen(f)
-eof(f)
+## Printing out a file
+
+### Using readline to read one line at a time
+~~~julia
+f = open("files.markdown")
+line = readline(f)
+while line != ""
+  print(line)
+  line = readline(f)
+end
 close(f)
+~~~
 
-readlines(open("index.markdown")) #Does this close the file?
+### Using read to read one char at a time
+~~~.jl
+f = open("files.markdown")
+while !eof(f)
+  print(read(f,Char)) # same as print(readline(f))
+end
+close(f)
+~~~
 
-   +------+-----------------------------------+
-   | r    | read                              |
-   +------+-----------------------------------+
-   | r+   | read, write                       |
-   +------+-----------------------------------+
-   | w    | write, create, truncate           |
-   +------+-----------------------------------+
-   | w+   | read, write, create, truncate     |
-   +------+-----------------------------------+
-   | a    | write, create, append             |
-   +------+-----------------------------------+
-   | a+   | read, write, create, append       |
-   +------+-----------------------------------+
+### Using readlines to read the entire thing
+print(map(chomp,readlines(open("files.markdown"))))
+
+## Printing out comments from a file
+
+### Using readuntil to print everything after a comment character
+```
+f = open("files.markdown")
+readuntil(f, "#")
+while !eof(f)
+  print("#", readline(f))
+  readuntil(f, "#") != ""
+end
+```
