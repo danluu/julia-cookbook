@@ -1,16 +1,13 @@
 # Julia Cookbook
 
-## In Progress
+## Partially Complete
 
-* Files
+* [Strings](string.md) (50%)
+* [Files](file.md) (40%)
+* [Shell Commands](shell-command.md) (40%)
 
-## Important
+## TODO
 
-* String Manipulation
 * Regexes
 * Taking Command Line Arguments
-* Shell Commands
-
-## Advanced
-
 * Sockets
