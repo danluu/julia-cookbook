@@ -8,6 +8,9 @@
 
 ## TODO
 
+* Functions
+* Types & Data Strucures
 * Regexes
 * Taking Command Line Arguments
+* Plotting
 * Sockets
