@@ -106,3 +106,21 @@ rstrip(s)       # "  foo"
 chomp(s)        # "  foo  "
 ~~~
 
+### Regular Expressions
+~~~.jl
+foo_star = Regex("foo.*") 
+ismatch(foo_star, "foo") # true
+ismatch(foo_star, "bar") # false
+# the r_str(s) macro is defined as Regex(s)
+fs = r"foo.*"
+ismatch(fs, "foo")       # true
+ismatch(fs, "bar")       # false
+
+fbb = r"(foo)(bar)?(baz|zab)" # r"(foo)(bar)?(baz|zab)"
+match(fbb, "foo")        # nothing
+m = match(fbb, "foobaz") # RegexMatch("foobaz", 1="foo", 2=nothing, 3="baz")
+m.captures               # ["foo", nothing, "baz"]
+m.offsets                # [1, 0, 4]
+# TODO: case sensitive matches, greedy vs. non-greedy, etc.
+~~~
+
