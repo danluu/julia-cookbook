@@ -97,6 +97,14 @@ reverse("What happens if I reverse this?")                 # "?siht esrever I fi
 oin(reverse(split("What happens if I reverse this?")),' ') # "this? reverse I if happens What"
 ~~~
 
+### Concatenating strings
+~~~.jl
+one = "one"               # one
+two = "two"               # two
+onetwo = string(one, two) # onetwo
+onetwotoo = "$one$two"    # onetwo
+~~~
+
 ### Stripping whitespace
 ~~~.jl
 s = "  foo  \n" # "  foo  \n"
