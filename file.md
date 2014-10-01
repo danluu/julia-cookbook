@@ -21,7 +21,9 @@ close(f)
 ~~~
 
 ### Using readlines to read the entire thing
+~~~.jl
 print(map(chomp,readlines(open("files.markdown"))))
+~~~
 
 ## Printing out comments from a file
 
