@@ -2,12 +2,12 @@
 
 ## Partially Complete
 
-* [Strings & Regexes](string.md) (50%)
-* [Files](file.md) (40%)
-* [Shell Commands](shell-command.md) (40%)
-* [Macros](macro.md) (10%)
-* [Dicts and Arrays](container.md) (1%)
-* [Corner Cases](corner-cases.md) (5%)
+* [Strings & Regexes](string.md) (12%)
+* [Files](file.md) (10%)
+* [Shell Commands](shell-command.md) (10%)
+* [Macros](macro.md) (2%)
+* [Dicts and Arrays](container.md) (.5%)
+* [Corner Cases](corner-cases.md) (1%)
 
 ## TODO
 
