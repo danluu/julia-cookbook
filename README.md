@@ -4,6 +4,7 @@
 
 * [Strings & Regexes](string.md) (12%)
 * [Files](file.md) (10%)
+* [Command Line Arguments](arg.md) (1%)
 * [Shell Commands](shell-command.md) (10%)
 * [Macros](macro.md) (2%)
 * [Dicts and Arrays](container.md) (.5%)
