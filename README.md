@@ -15,7 +15,6 @@
 * Functions
 * Introspection
 * Types & Data Strucures
-* Command Line Arguments
 * Macros
 * Plotting
 * Sockets
